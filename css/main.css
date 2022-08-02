@@ -8,6 +8,7 @@
   --secendory-background: #f5f4fa;
   --adress-color: rgba(255, 255, 255, 0.6);
   --secendory-btn-accent: #188ce8;
+  --icon-color: #afb1b8;
 }
 .section {
   padding-top: 94px;
@@ -249,12 +250,44 @@ img {
   color: var(--secendory-color-text);
 }
 .team-profession {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color-text);
 }
+
+.team-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.team-soc-icon {
+  fill: var(--icon-color);
+}
+
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-soc-link:hover,
+.team-soc-link:focus,
+.team-soc-link:active {
+  background-color: var(--color-accent);
+}
+
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon,
+.team-soc-link:active .team-soc-icon {
+  fill: #ffffff;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
