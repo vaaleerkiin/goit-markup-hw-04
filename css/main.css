@@ -9,6 +9,7 @@
   --adress-color: rgba(255, 255, 255, 0.6);
   --secendory-btn-accent: #188ce8;
   --icon-color: #afb1b8;
+  --footer-soc-icon-background: rgba(255, 255, 255, 0.1);
 }
 .section {
   padding-top: 94px;
@@ -309,6 +310,11 @@ img {
 .footer {
   background: var(--main-backgroung);
 }
+.footer > .container {
+  display: flex;
+  gap: 70px;
+}
+
 .map-link,
 .adress-link {
   font-style: normal;
@@ -321,6 +327,55 @@ img {
 .adress-link {
   color: var(--adress-color);
 }
+
+.soc-footer {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.soc-footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+.footer-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-soc-icon {
+  fill: var(--text-light);
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--footer-soc-icon-background);
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus,
+.footer-soc-link:active {
+  background-color: var(--color-accent);
+}
+
+/* .footer-soc-link:hover .footer-soc-icon,
+.footer-soc-link:focus .footer-soc-icon,
+.footer-soc-link:active .footer-soc-icon {
+  fill: #ffffff;
+} */
+
 /* -------------------------------------portfolio -----------------------------------------------*/
 
 .porfolio-btn-list {
