@@ -43,8 +43,6 @@ ul {
 
 .nav-link:hover,
 .nav-link:focus,
-.header-adress:hover,
-.header-adress:focus,
 .nav-link.current,
 .map-link:hover,
 .adress-link:hover {
@@ -106,7 +104,23 @@ body {
 }
 
 .header-adress {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-adress-icon {
+  fill: currentColor;
+}
+
+.header-adress {
   color: var(--main-color-text);
+}
+.header-adress:hover,
+.header-adress:focus {
+  color: var(--color-accent);
+  fill: var(--color-accent);
 }
 
 .hero > .container {
@@ -118,8 +132,19 @@ body {
 
 .hero {
   background: var(--main-backgroung);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-hero.jpg);
+
+  background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-title {
   max-width: 670px;
@@ -175,7 +200,19 @@ body {
   flex-basis: calc((100% - 90px) / 4);
 }
 
+.dignity-container-icon {
+  background: var(--secendory-background);
+  border-radius: 4ppx;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  min-height: 120px;
+  min-width: 270px;
+  display: flex;
+  justify-content: center;
+}
+
 .dignity-title {
+  margin-top: 30px;
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 14px;
@@ -287,6 +324,30 @@ img {
 .team-soc-link:focus .team-soc-icon,
 .team-soc-link:active .team-soc-icon {
   fill: #ffffff;
+}
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-icon-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  color: var(--icon-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-icon {
+  fill: currentColor;
+}
+.client-icon-link:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .footer {
@@ -404,6 +465,8 @@ img {
 .portfolio-btn:focus {
   background-color: var(--color-accent);
   color: var(--text-light);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -440,4 +503,10 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
