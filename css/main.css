@@ -148,7 +148,7 @@ body {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/bg-hero.jpg);
-
+  background-size: contain;
   background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -214,13 +214,11 @@ body {
 
 .dignity-container-icon {
   background: var(--secendory-background);
-  border-radius: 4ppx;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  border-radius: 4px;
   min-height: 120px;
-  min-width: 270px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .dignity-title {
@@ -402,6 +400,7 @@ img {
 .footer > .container {
   display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 
 .map-link,
@@ -418,7 +417,6 @@ img {
 }
 
 .soc-footer {
-  padding-top: 12px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -541,8 +539,9 @@ img {
   letter-spacing: 0.03em;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-item > a:hover,
+.portfolio-item > a:focus {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
