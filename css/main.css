@@ -369,7 +369,8 @@ img {
   fill: currentColor;
 }
 
-.client-icon-link:hover {
+.client-icon-link:hover,
+.client-icon-link:focus {
   color: var(--color-accent);
   border-color: var(--color-accent);
 }
@@ -463,12 +464,6 @@ img {
   background-color: var(--color-accent);
 }
 
-/* .footer-soc-link:hover .footer-soc-icon,
-.footer-soc-link:focus .footer-soc-icon,
-.footer-soc-link:active .footer-soc-icon {
-  fill: #ffffff;
-} */
-
 /* -------------------------------------portfolio -----------------------------------------------*/
 
 .porfolio-btn-list {
@@ -522,6 +517,9 @@ img {
 
 .portfolio-item > img {
   display: block;
+}
+.portfolio-item > a {
+  text-decoration: none;
 }
 
 .portfolio-item-title {
